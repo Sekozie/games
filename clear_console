@@ -1,0 +1,16 @@
+import os
+import platform
+
+def clear():
+    # Check the platform to determine the appropriate command
+    if platform.system() == "Windows":
+        os.system('cls')  # Windows command to clear the console
+    else:
+        os.system('clear')  # Unix/Linux/MacOS command to clear the console
+
+
+#   Note that PyCharm’s built-in terminal or console may
+#   not always support the same clear commands as a typical terminal.
+
+def pycharm_clear():
+    print("\n" * 100)  # Simulates clearing the screen by printing 100 new lines
